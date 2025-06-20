@@ -16,7 +16,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
             }`}
           >
-            <Eye className="w-5 h-5 inline mr-2" />
+            <Eye className="w-5 h-5 inline mr-2 h-5 bg-transparent" />
             View Items
           </button>
           <button
@@ -27,7 +27,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
             }`}
           >
-            <Plus className="w-5 h-5 inline mr-2" />
+            <Plus className="w-5 h-5 inline mr-2 h-5 bg-transparent" />
             Add Items
           </button>
         </div>

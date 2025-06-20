@@ -2,8 +2,8 @@ import { useState } from 'react';
 import Header from './components/Header';
 import ViewItemsPage from './pages/ViewItemsPage';
 import AddItemPage from './pages/AddItemPage';
-import ItemModal from './components/ItemModal';
-import SuccessMessage from './components/SuccessMessage';
+import ItemModal from './components/ItemModel';
+import SuccessMessage from './components/SuccessMessage'
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState('view');
@@ -20,7 +20,30 @@ const App = () => {
         "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=400&fit=crop"
       ]
     },
-    // ... other initial items
+    
+
+    {
+      id: 2,
+      name: "Running Sneakers",
+      type: "Shoes",
+      description: "High-performance running shoes with advanced cushioning technology. Perfect for daily runs and athletic activities.",
+      coverImage: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+      additionalImages: [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+      ]
+    },
+    {
+      id: 3,
+      name: "Denim Jeans",
+      type: "Pants",
+      description: "Premium quality denim jeans with a comfortable fit. Classic design that never goes out of style.",
+      coverImage: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=400&fit=crop",
+      additionalImages: [
+        "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=400&h=400&fit=crop"
+      ]
+    }
   ]);
 
   const [selectedItem, setSelectedItem] = useState(null);
@@ -155,7 +178,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-400">
+    <div className="min-h-screen ">
       <div className="container mx-auto px-4 py-8">
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
         
